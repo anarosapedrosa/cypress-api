@@ -1,13 +1,20 @@
 {
-    "name": "cypress-api",
-    "version": "1.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-      "cypress:open": "./node_modules/.bin/cypress open",
-      "cypress:run": "./node_modules/.bin/cypress run"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC"
+  "name": "cypress-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "./node_modules/.bin/cypress open",
+    "cypress:run": "./node_modules/.bin/cypress run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.3.4",
+    "cypress": "^10.3.0"
+  },
+  "dependencies": {
+    "faker": "^6.6.6"
   }
+}

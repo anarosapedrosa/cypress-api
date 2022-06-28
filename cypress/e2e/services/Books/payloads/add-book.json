@@ -1,8 +1,8 @@
 {
     "id": 1,
-    "title": "Name of the Book",
-    "description": "Description of the Book",
+    "title": "Harry Potter e a Pedra Filosofal",
+    "description": "Harry Potter e suas aventuras",
     "pageCount": 0,
     "excerpt": "string",
     "publishDate": "2021-10-06T18:36:16.512Z"
-  }
+}

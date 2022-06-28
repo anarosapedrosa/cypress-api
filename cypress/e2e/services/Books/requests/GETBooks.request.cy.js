@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
 
-function allBooks() {
+function getBooks() {
     // cy.request - client http
     return cy.request({
       method: 'GET',
@@ -9,4 +9,4 @@ function allBooks() {
     })
 }
   
-  export { allBooks };
+  export { getBooks };
