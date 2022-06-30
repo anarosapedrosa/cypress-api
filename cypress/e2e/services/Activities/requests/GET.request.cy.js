@@ -11,7 +11,7 @@ function getActivities(){
 function getOneActivity(id){
     return cy.request({
         method:'GET',
-        url:'Activities/'+id,
+        url:`Activities/${id}`,
         failOnStatusCode: false
     })
 }

@@ -40,6 +40,13 @@ describe ('GET',() => {
         })
     })
 
+    it('Deve retornar 400 ao buscar por idBook não válido', function(){
+        const id = '656554581111111111111'
+        GET.getAuthorsofIdBook(id).then(function(response){
+            expect(response.status).to.eql(400)
+        })
+    })
+
 
 });
 
