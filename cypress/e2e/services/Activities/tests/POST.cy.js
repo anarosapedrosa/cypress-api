@@ -1,10 +1,11 @@
 import * as POSTActivities from '../requests/POST.request.cy'
 
 context('POST',() =>{
-    it('Adiciona uma nova atividade', () =>{
+    it('Deve cadastrar uma atividade', () =>{
         POSTActivities.addActivity().should((response) => {
             expect(response.status).to.eq(200);
-            expect(response.body.title).to.eq("teste");       
-        });
-    });
-});
+            expect(response.body.title).to.eq("Leitura");       
+        })
+    })
+})
+

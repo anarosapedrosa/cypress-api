@@ -2,7 +2,7 @@ import * as POSTBooks from '../requests/POSTBooks.request.cy'
 let resAddBook = '';
 
 context('POST',() =>{
-    it('Adicionando um novo livro', () =>{
+    it('Deve cadastrar um livro', () =>{
         POSTBooks.addBook().should((response) => {
             expect(response.status).to.eq(200);
             resAddBook = response;

@@ -11,4 +11,5 @@ function addActivity() {
   })
 }
 
+
 export { addActivity };

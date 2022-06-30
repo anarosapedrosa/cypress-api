@@ -3,7 +3,7 @@ import * as GETBooks from '../requests/GETBooks.request.cy'
 import * as POSTBooks from '../requests/POSTBooks.request.cy'
 
 describe('PUT', () => {
-  it('Alterando o título de um livro', () => {
+  it('Deve alterar o título de um livro', () => {
     GETBooks.getBooks().then((resAllBooks) => {
       PUTBooks.changeBook(resAllBooks.body[0].id).should((resChangeBook) => {
         expect(resChangeBook.status).to.eq(200);
@@ -14,7 +14,7 @@ describe('PUT', () => {
   });
 
 
-  it('Criando e alterando um livro', () => {
+  it('Deve criar e alterar um livro', () => {
     POSTBooks.addBook().then((resAddBook) => {
       PUTBooks.changeBook(resAddBook.body.id).should((resChangeBook) => {
         expect(resChangeBook.status).to.eq(200);
